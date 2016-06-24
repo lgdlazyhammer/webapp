@@ -1,0 +1,41 @@
+@import 'variables';
+
+.form-group{
+}
+
+.form-group input{
+    font-size: $component-font-size-base;
+    border-radius: $border-radius-base;
+    border-style: solid;
+    border-color: $concrete;
+    padding-left: $padding-default-vertical; 
+    padding-right: $padding-default-vertical;
+    padding-top: $padding-default-horizental;
+    padding-bottom: $padding-default-horizental;
+}
+
+.form-group.has-error input{
+    font-size: $component-font-size-base;
+    border-radius: $border-radius-base;
+    border-style: solid;
+    border-color: $pomegranate;
+    padding-left: $padding-default-vertical; 
+    padding-right: $padding-default-vertical;
+    padding-top: $padding-default-horizental;
+    padding-bottom: $padding-default-horizental;
+}
+
+.form-group input:focus {
+    outline-width: 0;
+    border-color: $green-sea;
+}
+
+.form-group.has-error input{
+    border-color: $pomegranate;
+}
+
+.form-group input:disabled {
+    background-color: $gray-light;
+}
+
+

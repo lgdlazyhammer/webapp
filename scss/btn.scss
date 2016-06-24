@@ -1,0 +1,26 @@
+@import 'variables';
+
+.btn{
+    font-size: $btn-font-size-base;
+    display: inline;
+    border-radius: $border-radius-base;
+    padding-left: $padding-default-vertical; 
+    padding-right: $padding-default-vertical;
+    padding-top: $padding-default-horizental;
+    padding-bottom: $padding-default-horizental;
+    background-color: $concrete;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently*/
+}
+
+.btn-primary{
+    background-color: $peter-river;
+}
+
+.btn-primary:active{
+    background-color: $belize-hole;
+}
