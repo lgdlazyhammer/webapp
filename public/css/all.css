@@ -7,6 +7,10 @@
 	height: 200px;
 }
 
+.page-background{
+	background-image: url('../images/background-desktop-vertical.png');
+}
+
 #loginForm {
   animation-duration: 3s;
   animation-delay: 2s;
