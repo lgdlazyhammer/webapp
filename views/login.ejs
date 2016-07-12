@@ -7,7 +7,7 @@
 <% script('./js/PreloadJS/lib/preloadjs-0.6.2.min.js') -%>
 <% script('./js/jquery-3.0.0.min.js') -%>
 <% script('./js/bootstrap.min.js') -%>
-<% script('./js/init.js') -%>
+<% script('./js/login.js') -%>
 
 <div class="container-fluid">
 	<div class="row fill-login-upper-content">&nbsp;
@@ -15,7 +15,7 @@
 	<div id="loginForm" class="row">
 		<div class="col-md-5"></div>
 		<div class="col-md-2">
-			<form id="loginFormForm" class="panel panel-primary">
+			<form id="loginFormForm" class="panel panel-primary" action="/local/login" method="post">
 				<div class="panel-body bg-primary">
 					<label for="exampleInputEmail1">Email address</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -31,7 +31,8 @@
 			</form>
 			<div class="alert alert-warning alert-dismissible" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				please <strong>Log in</strong> to proceed.
+				please <strong>Log in</strong> to proceed.<br/>
+				if you don't have an account please <a href="/register"><strong>register</strong></a>
 			</div>
 		</div>
 		<div class="col-md-5"></div>

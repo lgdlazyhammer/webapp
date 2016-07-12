@@ -1,0 +1,60 @@
+<% layout('layout') -%>
+<% stylesheet('./css/all.css') -%>
+<% stylesheet('./css/animate.min.css') -%>
+<% stylesheet('./css/bootstrap.min.css') -%>
+<% stylesheet('./css/bootstrap-theme.min.css') -%>
+<% script('./js/SoundJS/lib/soundjs-0.6.2.min.js') -%>
+<% script('./js/PreloadJS/lib/preloadjs-0.6.2.min.js') -%>
+<% script('./js/jquery-3.0.0.min.js') -%>
+<% script('./js/bootstrap.min.js') -%>
+<% script('./js/register.js') -%>
+
+<div class="container-fluid">
+	<div class="row fill-login-upper-content">&nbsp;
+	</div>
+	<div id="registerForm" class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-2">
+			<form id="registerFormForm" class="panel panel-primary">
+				<div class="panel-body bg-primary">
+					<label for="username1">Password</label>
+					<input type="text" name="username" class="form-control" id="username1" placeholder="Name">
+				</div>
+				<div class="panel-body bg-primary">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				</div>
+				<div class="panel-body bg-primary">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="panel-body bg-primary">
+					<label class="radio-inline">
+						<input type="radio" name="gender" id="inlineRadio2" value="male"> male
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="gender" id="inlineRadio3" value="female"> female
+					</label>
+				</div>
+				<div class="panel-body bg-primary">
+					<label for="phonenumber1">Phone number</label>
+					<input type="text" name="phonenumber" class="form-control" id="phonenumber1" placeholder="Phonenumber">
+				</div>
+				<div class="panel-body bg-primary">
+					<label for="address1">Address</label>
+					<input type="text" name="address" class="form-control" id="address1" placeholder="Address">
+				</div>
+				<div class="panel-body bg-primary">
+					<button type="button" class="btn btn-default">Submit</button>
+					<button type="reset" class="btn btn-default">Reset</button>
+				</div>
+			</form>
+			<div class="alert alert-warning alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				please <strong>Register</strong> to proceed.
+			</div>
+		</div>
+		<div class="col-md-5"></div>
+	</div>
+</div>
+

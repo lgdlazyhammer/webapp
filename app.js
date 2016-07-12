@@ -30,6 +30,34 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-app.use('/', function(req, res) {
-    res.render('index');
+app.use('/login', function(req, res) {
+    res.render('login');
+});
+
+app.use('/register', function(req, res) {
+    res.render('register');
+});
+
+app.use('/logs', function(req, res) {
+    res.render('logs');
+});
+
+app.use('/local/login', function(req, res) {
+    res.render('local-login');
+});
+
+app.use('/local/users', function(req, res) {
+    res.render('local-users');
+});
+
+app.use('/local/consumers', function(req, res) {
+    res.render('local-consumers');
+});
+
+app.use('/local/resourceowners', function(req, res) {
+    res.render('local-resource-owners');
+});
+
+app.use('/local/supervisiondeal', function(req, res) {
+    res.render('local-supervision-deal');
 });
